@@ -34,7 +34,7 @@
 
   set par(
     justify: true,
-    spacing: 0.75em,
+    spacing: 1em,
   )
 
   set document(title: name)
@@ -49,6 +49,7 @@
       #let items = (
         link("mailto:" + email),
         phone-number,
+        underline(link(cv_link)[CV]),
         underline(link(linkedin)[LinkedIn]),
       )
       #items.join([ #sym.circle.filled.tiny ])
